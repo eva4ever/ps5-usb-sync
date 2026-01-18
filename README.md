@@ -49,4 +49,21 @@ destination/
 ## Requirements
 
 - macOS or Linux with Bash
-- rsync (pre-installed on macOS)
+- rsync
+
+### Installing rsync on macOS
+
+rsync comes pre-installed on macOS, but it's an older version. To install the latest version:
+
+```bash
+# Install Homebrew if you don't have it
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install rsync
+brew install rsync
+```
+
+To verify installation:
+```bash
+rsync --version
+```
