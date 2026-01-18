@@ -1,9 +1,15 @@
 # PS5 USB Sync
 
-Organizes artist directories into batches of 100, with each batch folder named after the first and last artist alphabetically (e.g., `ABBA - Coldplay`).
+Organizes artist directories into batches of 100, with each batch folder named after the first and last artist alphabetically (e.g., `Another Channel - Billain`).
 
 ## Usage
 
+First, make the script executable:
+```bash
+chmod +x organize_artists.sh
+```
+
+Then run:
 ```bash
 ./organize_artists.sh <source_directory> <destination_directory>
 ```
@@ -36,12 +42,14 @@ The script auto-detects which mode to use:
 
 ```
 destination/
-├── ABBA - Coldplay/
-│   ├── ABBA/
-│   ├── Adele/
-│   ├── Beatles/
+├── Another Channel - Billain/
+│   ├── Another Channel/
+│   ├── Al Wootton/
+│   ├── Alex Coulton/
 │   └── ... (up to 100 artists)
-├── Daft Punk - Iron Maiden/
+├── Bing - Cloaka/
+│   └── ...
+├── Tim Reaper - Versa/
 │   └── ...
 └── ...
 ```
